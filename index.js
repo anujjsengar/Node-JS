@@ -1,0 +1,16 @@
+console.log("Welcome to NODE.JS");
+const name="Anuj Kumar";
+console.log(name);
+//Module Request;
+const fs=require("fs");
+fs.writeFileSync("read.txt","welcome to node.js");
+fs.writeFileSync("read.txt","I am Anuj");
+fs.appendFileSync("read.txt","\nI amnauj");
+const data=fs.readFileSync("read.txt");
+org_data=data.toString();
+console.log(data);
+console.log(org_data);
+//to rename a file;
+fs.renameSync("read.txt","read_anuj.txt");
+//CRUD(Create,Update,Delete);
+fs.mkdirSync('File_Operation');
